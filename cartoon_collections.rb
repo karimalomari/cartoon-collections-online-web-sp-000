@@ -11,8 +11,14 @@ def summon_captain_planet(array)
 end
 
 def long_planeteer_calls(array)
-  value = array.find{|i| i.length > 4}
-  value == nil ? false : true
+  answer = false
+  long_planteer_calls.each do |call|
+    if call.length > 4
+      answer = true
+    end
+  end
+    answer
+end
 end
 
 def find_the_cheese# code an argument here
